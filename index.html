@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - ERJOK AGOT ERJOK</title>
+    <meta name="description" content="My name is ERJOK AGOT, I am a programmer and this webpage is for my WDD 131 - Dynamic Web Fundamentals, class of 2024">
+    <meta name="author" content="Erjok Agot Erjok">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <div class="container2">
+        <header>
+            <h1>WDD 131 : DYNAMIC WEB FUNDAMENTALS</h1>
+            <div class="container">
+                <nav class="navigation">
+                    <a href="https://www.linkedin.com/in/Erjok Agot">LinkedIn</a>
+                    <a href="https://byui.instructure.com/.">I-learn</a>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/3.16" target="_blank">Scripture</a>
+                    <a href="#" title="Final Project">Final Project</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section>
+                    <div class="Card">
+                        <h1>About me</h1>
+                        <img src="images/profile.jpg" alt="Hello my name is Erjok Agot Erjok" width="200">
+                        <p>Hello! My name is Erjok Agot and I am from South Sudan currently living in Kampala, Uganda. I love playing basketball, I am a 6'2 combo guard and my dream is to go pro in the future. I just love anything about a computer so I take on every course that will develop my computer skills and that's why I took on the web development certificate, I have found it so interesting so far and I am looking forward to taking more of these courses. My Family! I love it so much. It's a very big family and I am the first born of 7 kids and they give me motivation and inspiration to do my best in whatever it is I am taking.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="Card">
+                        <h1>Bor, South Sudan</h1>
+                        <img src="images/myflag.jpg" alt="Homeflag" width="200">
+                        <p>South Sudan is the youngest nation in the world, we got independence in 2011 and it is located in the East African region of the African continent.</p>
+                    </div>
+                </section>
+                <div class="sidebar">
+                    <aside class="box">
+                        <h1>Web Dev & Other Skills</h1>
+                        <p>&#10003; Introduction to Database.</p>
+                        <p>&#10003; Web Fundamentals.</p>
+                        <p>&#10003; Introduction to Programming.</p>
+                        <p>&#10003; Basketball coaching.</p>
+                        <p>&#10003; Basketball player.</p>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> 🏀💻 Erjok Agot 🏀💻. Bor, South Sudan.</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script>
+            // JavaScript to populate the current year
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+            // JavaScript to populate the last modified date
+            document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+        </script>
+    </div>
+    <script src="path/to/script.js"></script>
+</body>
+</html>
