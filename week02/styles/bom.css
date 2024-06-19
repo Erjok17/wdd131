@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button.delete {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#navMenu {
+    display: flex;
+    gap: 15px;
+}
+
+#navMenu.hidden {
+    display: none;
+}
+
+#navMenu a {
+    text-decoration: none;
+    color: black;
+}
+
+#navMenu a.active {
+    color: blue;
+    font-weight: bold;
+}

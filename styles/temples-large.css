@@ -1,0 +1,19 @@
+/* Larger Screen CSS */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex; /* Always show the menu in larger screens */
+        flex-direction: row;
+    }
+
+    .hamburger {
+        display: none; /* Hide the hamburger menu in larger screens */
+    }
+
+    main .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        position: static;
+    }
+}
