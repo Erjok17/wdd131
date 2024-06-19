@@ -24,7 +24,7 @@ nav {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-    display: block; /* Ensure the hamburger menu is visible */
+    display: block; /* Ensuring that the hamburger menu is visible */
 }
 
 nav ul {
@@ -70,9 +70,9 @@ figure {
 }
 
 figure img {
-    width: 300px; /* Set a fixed width for the images */
-    height: 250px; /* Set a fixed height for the images */
-    object-fit: cover; /* Ensure the images cover the area without distorting */
+    width: 300px; 
+    height: 250px; 
+    object-fit: cover; 
 }
 
 figcaption {
