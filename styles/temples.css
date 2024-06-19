@@ -90,3 +90,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
+nav ul li a:hover {
+    color: yellow; /* Change color on hover */
+}
