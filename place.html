@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Country Page</title>
+        <meta name="description" content="Information about my country South Sudan.">
+        <meta name="author" content="Erjok Agot Erjok">
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="script/place.js" defer></script>
+    </head>
+    
+<body>
+    <header>
+        <h1>South Sudan</h1>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-large.webp" alt="Hero Image">
+            <section id="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 619,745 km²</li>
+                    <li><strong>Population:</strong> 11.06 million (2023)</li>
+                    <li><strong>Capital:</strong> Juba</li>
+                    <li><strong>Languages:</strong> English (official), various local languages</li>
+                    <li><strong>Currency:</strong> South Sudanese pound (SSP)</li>
+                    <li><strong>Timezone:</strong> Central Africa Time (CAT), UTC +2</li>
+                    <li><strong>Calling Code:</strong> +211</li>
+                    <li><strong>Internet TLD:</strong> .ss</li>
+                </ul>
+            </section>
+            <section id="weather">
+                <h2>Weather</h2>
+                <p>Temperature: <span id="temperature">20</span>°C</p>
+                <p>Conditions: <span id="conditions">Sunny</span></p>
+                <p>Wind Speed: <span id="windSpeed">10</span> km/h</p>
+                <p>Wind Chill: <span id="windchill">N/A</span></p>
+            </section>
+        </picture>
+    </header>
+    <main>
+    </main>
+    <footer>
+        <p>&copy;2024 🏀💻 Erjok Agot 🏀💻 &middot; Kampala, Uganda &middot; Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        // JavaScript to display the last modified date
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
