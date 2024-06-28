@@ -58,7 +58,7 @@ picture img {
 }
 
 #weather h2::after {
-    content: url('path/to/your/image.png'); /* Replace with your image path */
+    content: url('images/1530391_weather_clouds_sun_sunny_icon.svg'); /* Replace with your image path */
     display: inline-block;
     width: 20px; /* Adjust width */
     height: 20px; /* Adjust height */
