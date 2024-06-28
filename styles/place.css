@@ -43,6 +43,7 @@ picture img {
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
+    z-index: 1
 }
 
 #data h2, #weather h2 {
@@ -54,12 +55,12 @@ picture img {
 }
 
 #data {
-    top: -750px; /* Positioned at the top */
+    top: 150px; /* Positioned at the top */
     left: 20px; /* Positioned at the left */
 }
 
 #weather {
-    bottom: 20px; /* Positioned at the bottom */
+    bottom: -150px; /* Positioned at the bottom */
     right: 20px; /* Positioned at the right */
 }
 
@@ -80,7 +81,7 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 0.5rem; /* Reduced padding */
-    font-size: 0.8rem; /* Reduced font size */
+    font-size: 1rem; /* Reduced font size */
 }
 
 @media (min-width: 600px) {
