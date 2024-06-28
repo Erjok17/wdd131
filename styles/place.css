@@ -42,8 +42,10 @@ picture img {
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
     z-index: 1;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    max-width: 100%; /* Ensure it fits within the viewport */
+    box-sizing: border-box;
 }
 
 #data h2, #weather h2 {
@@ -52,18 +54,26 @@ picture img {
     margin: -1rem -1rem 1rem -1rem;
     padding: 0.5rem;
     text-align: center;
+    position: relative;
+}
+
+#weather h2::after {
+    content: url('path/to/your/image.png'); /* Replace with your image path */
+    display: inline-block;
+    width: 20px; /* Adjust width */
+    height: 20px; /* Adjust height */
+    margin-left: 8px; /* Adjust margin to space between text and image */
+    vertical-align: middle; /* Align with the text */
 }
 
 #data {
     top: 10%;
     left: 5%;
-    width: 90%;
 }
 
 #weather {
     bottom: 10%;
     right: 5%;
-    width: 90%;
 }
 
 main {
@@ -72,10 +82,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-#weather h2::after {
-    content: "⛅";
 }
 
 footer {
@@ -92,21 +98,27 @@ footer {
     height: auto; /* Maintain aspect ratio */
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+    #data, #weather {
+        position: relative;
+        width: 90%;
+        margin: 10px auto; /* Center the sections on the page */
+        left: 0; /* Reset left position */
+        right: 0; /* Reset right position */
+        top: auto; /* Reset top position */
+        bottom: auto; /* Reset bottom position */
+    }
+
     #data {
-        width: 30%;
-        top: 10%;
-        left: 5%;
+        order: 1; /* Ensure it appears first */
     }
 
     #weather {
-        width: 30%;
-        bottom: 10%;
-        right: 5%;
+        order: 2; /* Ensure it appears second */
     }
 
     main {
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
