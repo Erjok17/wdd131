@@ -76,12 +76,19 @@ main {
     content: "⛅";
 }
 
+
 footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
     text-align: center;
     padding: 0.5rem; /* Reduced padding */
     font-size: 1rem; /* Reduced font size */
+}
+
+.footer-logo {
+    margin-top: 10px;
+    width: 50px; /* Set the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 @media (min-width: 600px) {
