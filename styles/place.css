@@ -43,7 +43,7 @@ picture img {
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
-    z-index: 1
+    z-index: 1;
 }
 
 #data h2, #weather h2 {
@@ -55,13 +55,15 @@ picture img {
 }
 
 #data {
-    top: 150px; /* Positioned at the top */
-    left: 20px; /* Positioned at the left */
+    top: 10%;
+    left: 5%;
+    width: 90%;
 }
 
 #weather {
-    bottom: -150px; /* Positioned at the bottom */
-    right: 20px; /* Positioned at the right */
+    bottom: 10%;
+    right: 5%;
+    width: 90%;
 }
 
 main {
@@ -75,7 +77,6 @@ main {
 #weather h2::after {
     content: "⛅";
 }
-
 
 footer {
     background-color: var(--secondary-color);
@@ -92,6 +93,18 @@ footer {
 }
 
 @media (min-width: 600px) {
+    #data {
+        width: 30%;
+        top: 10%;
+        left: 5%;
+    }
+
+    #weather {
+        width: 30%;
+        bottom: 10%;
+        right: 5%;
+    }
+
     main {
         flex-direction: row;
         justify-content: space-around;
