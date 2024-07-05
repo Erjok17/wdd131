@@ -104,3 +104,7 @@ footer {
     position: relative; /* Changed from fixed */
     margin-top: 2rem; /* Add space above footer */
 }
+nav ul li a:hover {
+    color: yellow; /* Change the color when hovered */
+    text-decoration: underline; /* Add underline effect */
+}
