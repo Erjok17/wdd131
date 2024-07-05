@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4b0082;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    position: relative;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block; /* Ensuring that the hamburger menu is visible */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    gap: 3rem; 
+}
+
+nav ul.show {
+    display: flex; /* Show the menu when the class 'show' is added */
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.temple-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.temple-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.temple-card figcaption {
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card:hover {
+    transform: scale(1.05);
+}
+
+figcaption h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #4b0082;
+}
+
+figcaption p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the height calculation */
+    position: relative; /* Changed from fixed */
+    margin-top: 2rem; /* Add space above footer */
+}
