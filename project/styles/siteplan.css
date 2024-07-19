@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Added this line */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header .logo {
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1; /* Added this line */
+    justify-content: flex-end; /* Changed from space-between to flex-end */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social-media-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Slideshow Styles */
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slideshow-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slideshow-background img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+}
+
+.slideshow-background h2,
+.slideshow-background p {
+    position: absolute;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.slideshow-background h2 {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slideshow-background p {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Camp Session Styles */
+.camp-session {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+.camp-session h3 {
+    margin-top: 0;
+}
+
+/* Wireframe Image Styles */
+.wireframe {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+    max-height: 400px; /* Added this line to reduce size */
+}
