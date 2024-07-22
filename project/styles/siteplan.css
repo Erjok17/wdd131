@@ -8,7 +8,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Added this line */
+    justify-content: space-between;
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -24,8 +24,8 @@ header h1 {
 
 nav {
     display: flex;
-    flex-grow: 1; /* Added this line */
-    justify-content: flex-end; /* Changed from space-between to flex-end */
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -169,5 +169,30 @@ form input[type="submit"]:hover {
     margin: 0 auto;
     display: block;
     padding: 10px 0;
-    max-height: 400px; /* Added this line to reduce size */
+    max-height: 400px;
+}
+
+/* Media Styles */
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.media video {
+    flex: 1;
+    max-width: 100%;
+}
+
+.media .images {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.media .highlight-image {
+    max-width: 48%;
+    height: auto;
 }
